@@ -5,6 +5,7 @@ import java.util.NoSuchElementException;
 public class LinkedStack<E> implements StackEaaa<E> {
     private Node<E> top;
     private int size = 0;
+
     @Override
     public void push(E element) {
         top = new Node<>(element, top);
